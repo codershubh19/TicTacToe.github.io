@@ -103,6 +103,10 @@ var che = [
           makecheck("01");
           return;
       }
+        if(moves==6&&che[2][2]==che[1][1]&&che[1][1]==1){
+          makecheck("12");
+          return;
+      }
     if((che[0][0]==che[1][1]&&che[1][1]==key)||(che[1][1]==che[2][2]&&che[2][2]==key)||(che[0][0]==che[2][2]&&che[2][2]==key))
     {
         if(key==0||key==1)
